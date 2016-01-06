@@ -223,7 +223,7 @@ local function run(msg, matches)
           chat_info(receiver, username_id, {get_cmd=get_cmd, receiver=receiver, chat_id=msg.to.id, member=member})
       end
     else
-      return 'این جا گزوه نیست!'
+      return 'اینجا گروه نیست!'
     end
   end
 
@@ -307,22 +307,37 @@ return {
           },
       },
   patterns = {
-    "^!(whitelist) (enable)$",
-    "^!(whitelist) (disable)$",
-    "^!(whitelist) (user) (.*)$",
-    "^!(whitelist) (chat)$",
-    "^!(whitelist) (delete) (user) (.*)$",
-    "^!(whitelist) (delete) (chat)$",
-    "^!(ban) (user) (.*)$",
-    "^!(ban) (delete) (.*)$",
-    "^!(superban) (user) (.*)$",
-    "^!(superban) (delete) (.*)$",
-    "^!(kick) (.*)$",
-    "^!(ban) (.*)$",
-    "^!(unban) (.*)$",
-    "^!(kick) (.*)$",
-    "^!(kickme)$",
+    "^[/!](whitelist) (enable)$",
+    "^[/!](whitelist) (disable)$",
+    "^[/!](whitelist) (user) (.*)$",
+    "^[/!](whitelist) (chat)$",
+    "^[/!](whitelist) (delete) (user) (.*)$",
+    "^[/!](whitelist) (delete) (chat)$",
+    "^[/!](ban) (user) (.*)$",
+    "^[/!](ban) (delete) (.*)$",
+    "^[/!](superban) (user) (.*)$",
+    "^[/!](superban) (delete) (.*)$",
+    "^[/!](kick) (.*)$",
+    "^[/!](ban) (.*)$",
+    "^[/!](unban) (.*)$",
+    "^[/!](kick) (.*)$",
+    "^[/!](kickme)$",
     "^!!tgservice (.+)$",
+    "^(whitelist) (enable)$",
+    "^(whitelist) (disable)$",
+    "^(whitelist) (user) (.*)$",
+    "^(whitelist) (chat)$",
+    "^(whitelist) (delete) (user) (.*)$",
+    "^(whitelist) (delete) (chat)$",
+    "^(ban) (user) (.*)$",
+    "^(ban) (delete) (.*)$",
+    "^(superban) (user) (.*)$",
+    "^(superban) (delete) (.*)$",
+    "^(kick) (.*)$",
+    "^(ban) (.*)$",
+    "^(unban) (.*)$",
+    "^(kick) (.*)$",
+    "^(kickme)$"
   }, 
   run = run,
   pre_process = pre_process
